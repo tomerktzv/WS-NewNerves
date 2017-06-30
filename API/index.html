@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEW NERVES</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ceviche+One" rel="stylesheet">
+
+    <link rel="stylesheet" href="./includes/style.css">
+    <link rel="icon" href="images/NNLogo.jpg">
+
+</head>
+<body>
+    <div id="container">
+        <section id="headerSet">
+            <h1>Welcome To New Nerves API</h1>
+            <img src="https://raw.githubusercontent.com/NirMekin/WS_NewNerves/master/API/images/NNLogo.jpg?raw=true">
+            <div class="clear"></div>
+        </section>
+
+        <h2 class="titleRoutes">Songs</h2>
+
+        <div class="methodHandle">
+            <div class="methodHeader">
+                <h2><span class="span1">GET</span><span class="span2">/getAllSongs</span></h2>
+            </div>
+            <div class="methodExplain">
+                <p>none <span>params</span> require</p>
+                <section>
+                    <pre>
+                    <code style="color: green;">
+                        [
+                            {
+                                title: "Gotta Get Away",
+                                artist: "The Black Keys",
+                                id: 100,
+                                duration: 181.2,
+                               cover: "heroku_data",
+                                genre: "Indie Rock"
+                            },
+                            {
+                                title: "I Want You So Hard (Boy's Bad News)",
+                                artist: "Eagles Of Death Metal",
+                                id: 101,
+                                duration: 133.8,
+                                cover: "heroku_data",
+                                genre: "Stoner Rock"
+                            }
+                        ]
+                    </code>
+                    </pre>
+                </section>
+            </div>
+            <div class="methodLink">
+                <article>Example: </article>
+                <a href="getAllSongs">/getAllSongs</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="methodHandle">
+            <div class="methodHeader">
+                <h2><span class="span1">GET</span><span class="span2">/getSongsByTitle/:title</span></h2>
+            </div>
+            <div class="methodExplain">
+                <p>require <span>"title"</span> parameter</p>
+                <section>
+                    <pre>
+                    <code style="color: green;">
+                        [
+                            {
+                                title: "Gotta Get Away",
+                                artist: "The Black Keys",
+                                id: 100,
+                                duration: 181.2,
+                                cover: "heroku_data",
+                                genre: "Indie Rock"
+                            }
+                        ]
+                    </code>
+                    </pre>
+                </section>
+            </div>
+            <div class="methodLink">
+                <article>Example: </article>
+                <a href="/getSongsByTitle/Gotta%20Get%20Away">/getSongsByTitle/Gotta Get Away</a>
+                <div class="clear"></div>
+            </div>
+
+    </div>
+
+        <div class="methodHandle">
+            <div class="methodHeader">
+                <h2><span class="span1" style="background: rebeccapurple">POST</span><span class="span2">/getSongsByGenre</span></h2>
+            </div>
+            <div class="methodExplain">
+                <p>require <span>"genre"</span> parameter</p>
+                <section>
+                    <pre>
+                    <code style="color: green;">
+                        [
+                            {
+                                title: "Gotta Get Away",
+                                artist: "The Black Keys",
+                                id: 100,
+                                duration: 181.2,
+                                cover: "heroku_data",
+                                genre: "Indie Rock"
+                            }
+                        ]
+                    </code>
+                    </pre>
+                </section>
+            </div>
+            <div class="methodLink">
+                <article>Example: </article>
+                <a href="/getSongsByTitle/Gotta%20Get%20Away">/getSongsByTitle/Gotta Get Away</a>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+
+        <div class="methodHandle">
+            <div class="methodHeader">
+                <h2><span class="span1">GET</span><span class="span2">/getSongsByArtist/:artist</span></h2>
+            </div>
+            <div class="methodExplain">
+                <p>require <span>"artist"</span> parameter</p>
+                <section>
+                    <pre>
+                    <code style="color: green;">
+                        [
+                            {
+                                title: "Gotta Get Away",
+                                artist: "The Black Keys",
+                                id: 100,
+                                duration: 181.2,
+                                cover: "heroku_data",
+                                genre: "Indie Rock"
+                            }
+                        ]
+                    </code>
+                    </pre>
+                </section>
+            </div>
+            <div class="methodLink">
+                <article>Example: </article>
+                <a href="/getSongsByArtist/:artist">/getSongsByArtist/:artist</a>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+
+        <h2 class="titleRoutes">Users</h2>
+
+        <div class="methodHandle">
+            <div class="methodHeader">
+                <h2><span class="span1">GET</span><span class="span2">/getAllUsers</span></h2>
+            </div>
+            <div class="methodExplain">
+                <p>none <span>params</span> require</p>
+                <section>
+                    <pre>
+                    <code style="color: green;">
+                        [
+                            {
+                                title: "Gotta Get Away",
+                                artist: "The Black Keys",
+                                id: 100,
+                                duration: 181.2,
+                               cover: "heroku_data",
+                                genre: "Indie Rock"
+                            },
+                            {
+                                title: "I Want You So Hard (Boy's Bad News)",
+                                artist: "Eagles Of Death Metal",
+                                id: 101,
+                                duration: 133.8,
+                                cover: "heroku_data",
+                                genre: "Stoner Rock"
+                            }
+                        ]
+                    </code>
+                    </pre>
+                </section>
+            </div>
+            <div class="methodLink">
+                <article>Example: </article>
+                <a href="/getAllUsers">/getAllUsers</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="methodHandle">
+            <div class="methodHeader">
+                <h2><span class="span1">GET</span><span class="span2">/getUserById/:title</span></h2>
+            </div>
+            <div class="methodExplain">
+                <p>require <span>"id"</span> parameter</p>
+                <section>
+                    <pre>
+                    <code style="color: green;">
+                        [
+                            {
+                                title: "Gotta Get Away",
+                                artist: "The Black Keys",
+                                id: 100,
+                                duration: 181.2,
+                                cover: "heroku_data",
+                                genre: "Indie Rock"
+                            }
+                        ]
+                    </code>
+                    </pre>
+                </section>
+            </div>
+            <div class="methodLink">
+                <article>Example: </article>
+                <a href="/getSongsByTitle/Gotta%20Get%20Away">/getSongsByTitle/Gotta Get Away</a>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+
+        <h2 class="titleRoutes">Mixes</h2>
+
+        <div class="methodHandle">
+            <div class="methodHeader">
+                <h2><span class="span1">GET</span><span class="span2">/getAllMixes</span></h2>
+            </div>
+            <div class="methodExplain">
+                <p>require <span>"id"</span> parameter</p>
+                <section>
+                    <pre>
+                    <code style="color: green;">
+                        [
+                            {
+                                title: "Gotta Get Away",
+                                artist: "The Black Keys",
+                                id: 100,
+                                duration: 181.2,
+                                cover: "heroku_data",
+                                genre: "Indie Rock"
+                            }
+                        ]
+                    </code>
+                    </pre>
+                </section>
+            </div>
+            <div class="methodLink">
+                <article>Example: </article>
+                <a href="/getAllMixes">/getAllMixes</a>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+
+        <div class="methodHandle">
+            <div class="methodHeader">
+                <h2><span class="span1">GET</span><span class="span2">/getMixesByUserID/:id</span></h2>
+            </div>
+            <div class="methodExplain">
+                <p>require <span>"id"</span> parameter</p>
+                <section>
+                    <pre>
+                    <code style="color: green;">
+                        [
+                            {
+                                songs: [101],
+                                userid: 456,
+                                mixid: 2,
+                                mixname: "My Favourite",
+                                likes: 0,
+                                heard: 0,
+                                comments: [""],
+                                hashtags: ["cool"]
+                            }
+                        ]
+                    </code>
+                    </pre>
+                </section>
+            </div>
+            <div class="methodLink">
+                <article>Example: </article>
+                <a href="/getMixesByUserID/456">/getMixesByUserID/:id</a>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+
+        <h2 class="titleRoutes">Error</h2>
+
+        <div class="methodHandle">
+            <div class="methodHeader">
+                <h2>Error Examples</h2>
+            </div>
+            <div class="methodExplain">
+                <section>
+                    <pre>
+                    <code style="color: green;">
+                        [
+                            {
+                                Error : DB issue
+                            }
+                        ]
+                    </code>
+                    </pre>
+                </section>
+            </div>
+            <div class="methodExplain">
+                <section>
+                    <pre>
+                    <code style="color: green;">
+                        [
+                            {
+                                Error : Problem with data
+                            }
+                        ]
+                    </code>
+                    </pre>
+                </section>
+            </div>
+            <div class="methodLink">
+                <div class="clear"></div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

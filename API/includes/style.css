@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(lightblue,snow,white,white);
+}
+#container{
+    width:65%;
+    margin: 0 auto;
+    background: #F9F9F9;
+    padding: 0.5% 2.5%;
+}
+h1{
+    float: left;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+    font-size: 275%;
+}
+
+img{
+    width:8%;
+    margin-top:3%;
+    float: right;
+    border-radius: 50%;
+    display: block;
+}
+
+#headerSet{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.methodHandle{
+    background: white;
+    border: solid lightblue 1px;
+    border-radius: 2px;
+    border-top:none;
+}
+.methodHeader h2{
+    border-top: solid lightblue 1px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.span1{
+    width:12.5%;
+    display: block;
+    float: left;
+    text-align: center;
+    background: blue;
+    color: snow;
+    border-right:solid gray 1px;
+    border-bottom:solid gray 1px;
+}
+
+.span2{
+    background: snow;
+    text-align: center;
+    width:87.5%;
+    display: block;
+    float: right;
+    border-bottom:solid gray 1px;
+}
+
+.methodExplain{
+    padding-left: 2%;
+    border-bottom: solid 1px gray;
+    font-size: 120%;
+}
+.methodExplain span{
+    color: red;
+    background: lightcyan;
+    font-size: 90%;
+    font-family: 'Chewy', cursive;
+}
+
+.methodExplain section{
+    width: 98%;
+    height: 180px;
+    overflow-y: scroll;
+    margin-bottom: 2.5%;
+}
+
+.methodLink article{
+    padding-left: 2%;
+    float: left;
+    margin-right: 5%;
+}
+.methodLink a {
+    text-decoration: none;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+
+.titleRoutes{
+    font-size: 300%;
+    border-bottom: 1px solid cornflowerblue;
+    color: cornflowerblue;
+    font-family: 'Ceviche One', cursive;
+}
